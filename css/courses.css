@@ -18,6 +18,7 @@
 /* Courses Container */
 #main_container{
 	padding: 50px 100px;
+	padding-bottom: 0;
 }
 
 	/* Category wise search section starts */
@@ -99,6 +100,13 @@
 		margin-left: 30px;
 	}
 
+/*	@media(min-width: 1310px){
+		.course_col{
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}*/
+
 	#course{
 		width: 46%;
 		border-radius:10px; 
@@ -151,9 +159,9 @@
 		color: #55555a;
 	}
 	
-	.course_info:first-child{
+/*	.course_info:first-child{
 		margin-right: 18px;
-	}
+	}*/
 	/* View of Courses Section Ends */
 
 	/* Pagination Below Courses Section Starts */
@@ -194,7 +202,7 @@
 
 	/* Pagination Below Courses Section Ends */
 
-	/*Sidebar Section Starts*/
+	/*Sidebar Categories Section Starts*/
 	
 	#side_contents{
 		padding-left: 40px;
@@ -238,44 +246,121 @@
 	.sidebar_categories ul li:not(:last-of-type) {
 	    border-bottom: solid 1px #e5e5e5;
 	}
-/*
-	a{		
+
+	.section_categories > ul > li{
+		margin: 10px;
+		padding: 5px;
+		border-bottom: 1px solid black;
+	}
+
+	.section_categories > ul > li > a{
 	  	color: #76777a!important;
 	}
-*/
-	.sidebar_categories > ul > li > a {
-	    display: block;
-	    position: relative;
-	    font-size: 14px!important;
-	    color: #76777a!important;
-	    line-height: 51px;
-	    -webkit-transition: all 200ms ease;
-	    -moz-transition: all 200ms ease;
-	    -ms-transition: all 200ms ease;
-	    -o-transition: all 200ms ease;
-	    transition: all 200ms ease;
-	}
-	/*
-	.sidebar_categories ul li a::before {
-	    display: inline-block;
-	    position: relative;
-	    font-family: 'FontAwesome';
-	    content: '\f101';
-	    margin-right: 4px;
-	    -webkit-transition: all 200ms ease;
-	    -moz-transition: all 200ms ease;
-	    -ms-transition: all 200ms ease;
-	    -o-transition: all 200ms ease;
-	    transition: all 200ms ease;
-	}*/
-
 
 
 	.sidebar_section:not(:last-child){
 		margin-bottom: 60px;
 	}
 
-	/*Sidebar Section Ends*/
+	/*Sidebar Categories Section Ends*/
+
+	/*Sidebar Latest Section Starts*/
+
+	.sidebar_latest{
+		margin-top: 31px;
+		background-color: #f2f4f5;
+		padding: 20px 5px;
+		padding-bottom: 10px;
+	}
+
+	.latest_course{
+		margin-top:15px;
+		height: 90px; 
+		position: relative;
+	}
+
+	.latest_image{
+		display: block;
+		position: relative;
+	}
+
+	.latest_image div{
+		width: 90px;
+		height: 74px;
+		border-radius: 3px;
+		overflow: hidden;
+		display: block;
+	}
+
+	.latest_image div img{
+		max-width: 100%;
+	}
+
+	img{
+		vertical-align: middle;
+		border-style: none;
+	}
+
+	.latest_content{
+		padding-left: 21px;
+		margin-top: -4px;
+		margin-bottom: 5px;
+	}
+
+	.latest_title a{
+		font-size: 16px;
+		font-weight: 700;
+		color: #383749;
+		line-height: 1.625;
+		transition: all 200ms ease;
+	}
+
+	.latest_price{
+		font-size: 14px;
+		font-weight: 700;
+		color: #14bdee;
+		line-height: 0.75;
+		margin-top: 16px;
+	}
+
+	/*Sidebar Latest Section Ends*/
+
+	/*Sidebar Upcoming Section Starts*/
+
+	/*The rest of the css is similar to the latest part above so there is code reusablity*/
+	.sidebar_upcoming{
+		margin-top: 31px;
+		padding: 0;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+
+
+	.upcoming_course{
+		margin-top:15px;
+		height: 90px; 
+		position: relative;		
+		border-bottom: solid 1px #e5e5e5;
+	}
+
+	/*Sidebar Upcoming Section Ends*/
+
+	/*Sidebar Tags Section Starts*/
+
+	ul{
+		margin-top: 31px;
+	}
+
+	.tags_list li{
+		display: inline-block;
+		padding-left: 19px;
+		padding-right: 18px;
+		background: #f2f4f5;
+		margin-bottom: 10px;
+		border-radius: 3px;
+	}
+
+	/*Sidebar Tags Section Ends*/
 
 /* Courses Container Ends */
 
