@@ -475,7 +475,7 @@
 	}
 
 	.sidebar_section:not(:last-child) {
-	    margin-bottom: 60px;
+	    margin-bottom: 50px;
 	}
 
 	.section_title{
@@ -517,11 +517,6 @@
 
 	.section_categories > ul > li > a{
 	  	color: #76777a!important;
-	}
-
-
-	.sidebar_section:not(:last-child){
-		margin-bottom: 60px;
 	}
 
 	/*Sidebar Categories Section Ends*/
