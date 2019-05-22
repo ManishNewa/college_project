@@ -632,12 +632,12 @@
 		margin: 20px;
 	}
 
-	.row .col-12{
+	.section_features .row .col-12{
 		display: flex;
 		margin-bottom: 10px;
 	}
 
-	.row .col-12 > div{
+	.section_features .row .col-12 > div{
 		flex-direction: column;
 	}
 
@@ -662,6 +662,62 @@
 		margin-right: 10px;
 	} 
 	/*Sidebar Course Feature Details Section Ends*/
+
+
+	/*Sidebar Tutor Information Section Starts*/
+
+	.tutor_title{
+		margin-top: 20px;
+		display: flex;
+	}
+
+	.tutor_title .tutor_img{
+		width: 25%;
+		flex-direction: column;
+	}
+
+	.tutor_img img{
+		width: 100%;
+	}
+
+	.tutor_title .tutor_info{
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+
+	.tutor_info .tutor_name{
+		font-size: 24px;
+		color: #000;
+		margin-bottom: 5px;
+	}
+
+	.tutor_details{
+		margin-top: 20px;
+	}
+
+	.tutor_details .details_view{
+		margin: 15px;
+	}
+
+	.tutor_details .row .col-12{
+		display: flex;
+		margin-bottom: 10px;
+	}
+
+	.tutor_details .row .col-12 .details_title{
+		flex-direction: column;
+		flex: 1;
+	}
+
+	.tutor_details .row .col-12 .details_value{
+		flex-direction: column;
+		flex: 1;
+		text-align: right;
+	}
+
+	/*Sidebar Tutor Information Section Ends*/
 
 /* Courses Container Ends */
 
