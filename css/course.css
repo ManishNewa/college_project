@@ -624,6 +624,45 @@
 
 	/*Sidebar Tags Section Ends*/
 
+
+
+	/*Sidebar Course Feature Details Section Starts*/
+
+	.section_features{
+		margin: 20px;
+	}
+
+	.row .col-12{
+		display: flex;
+		margin-bottom: 10px;
+	}
+
+	.row .col-12 > div{
+		flex-direction: column;
+	}
+
+	.feature_left{
+		flex: 1;
+	}
+
+	.feature_right{
+		flex: 1;
+	}
+
+	.feature_icon{
+		flex: 0.1;
+	}
+
+	.feature_left span{
+		margin-left: 10px;
+	}
+
+	.feature_right p{
+		text-align: right;
+		margin-right: 10px;
+	} 
+	/*Sidebar Course Feature Details Section Ends*/
+
 /* Courses Container Ends */
 
 
