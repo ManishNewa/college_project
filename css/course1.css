@@ -1401,7 +1401,7 @@ section
 }
 .sidebar_section:not(:last-child)
 {
-	margin-bottom: 60px;
+	/*margin-bottom: 60px;*/
 }
 .sidebar_section_title
 {
