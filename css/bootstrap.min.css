@@ -3487,7 +3487,9 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
     }
 }
 .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse{
-    max-height:340px
+    transition: .2s all ease;
+    max-height:340px;
+    /*transform: translateY(2px);*/
 }
 @media (max-device-width:480px)and (orientation:landscape){
     .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse{
