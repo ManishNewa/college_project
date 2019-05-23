@@ -269,15 +269,22 @@ section {
   padding-bottom: 30px;
 }
 
-.navbar-right li.active a {
+.navbar-right li.active {
   background-color: rgba(0,0,0,.2);
 }
 
-.navbar-right li:hover{
+
+.navbar-right li a {
+  /*background-color: rgba(0,0,0,.6);  */
+  position: fixed right;
+}
+
+.navbar-right li a:hover{
   /*background-color: rgba(0,0,0,.6);*/
   transition: 0.5s all;
   position: fixed right;
-  top: -10px;
+  /*top: -10px;*/
+  transform: translateY(-5px); 
   /*padding-left: 5px;
   padding-right: 5px;*/
 }
