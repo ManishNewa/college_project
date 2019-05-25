@@ -86,10 +86,24 @@
 
 	.courses_container{
 		width: 100%;
+
+	}
+	.courses_container div.row{/*
+		display: flex;
+		justify-content: space-between;*/
+		flex-wrap: wrap;
 	}
 
 	.course_col{
+		flex-basis: 45%;
 		margin-bottom: 51px;
+	}
+
+	@media(min-width: 900px){
+		.courses_container div.row{
+			display: flex;
+			/*justify-content: space-between;*/
+		}
 	}
 	
 	.course_col:nth-child(odd){

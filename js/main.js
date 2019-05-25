@@ -1,5 +1,9 @@
 jQuery(function($) {
 
+	$("body").append("<a data-scroll class='scroll_to_top fadeInUpBig' href='#top'><span class='fa fa-angle-up'></a>");
+    $('body').attr('id', 'top');
+
+
 	//Preloader
 	var preloader = $('.preloader');
 	$(window).load(function(){
@@ -20,23 +24,48 @@ jQuery(function($) {
 
 	// This works on the landing page only
 	$(window).on('scroll', function(){
+		// Placing fixed navigation bar at the top
 		if( $(window).scrollTop()>slideHeight ){
 			$('.main-nav').addClass('navbar-fixed-top');
 		} else {
 			$('.main-nav').removeClass('navbar-fixed-top');
 		}
+
+		// For showing the goto top icon
+        var scroll = $(window).scrollTop(),
+            mainHeader = $('.main-nav'),
+            scroll_to_top = $('.scroll_to_top');
+		// scrolltop
+
+        if (scroll > 100) {
+            scroll_to_top.addClass("active");
+        } else {
+            scroll_to_top.removeClass("active");
+        }
 	});
+
+	// Scroll to top
+
 	
 	// Navigation Scroll
 	$(window).scroll(function(event) {
 		Scroll();
 	});
 
+
+
 	$('.navbar-collapse ul li a').on('click', function() {  
 		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
         $('.navbar-collapse.collapse.in').removeClass('in');
 		return false;
 	});
+	
+	$('a .scroll_to_top').on('click', function() {  
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+        $('.scroll_to_top.in').removeClass('in');
+		return false;
+	});
+	
 
 	// User define function
 	function Scroll() {
